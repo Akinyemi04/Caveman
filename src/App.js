@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>
+            Get familiar with your journal it is the <span>best idea
+            in this field</span>
+        </h1>
       </header>
+      
+      <main>
+        <p><span className='span'>Log-in</span></p>
+        <p className='pin'>Don't have an account yet?</p>
+        <p ><span className='signup'>Sign-up</span></p>
+      </main>
     </div>
   );
 }
