@@ -1,10 +1,47 @@
 * {
   padding: 0 0;
   margin: 0 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  -webkit-border-start: 2vw;
+          border-inline-start: 2vw;
+  -webkit-border-end: 2vw;
+          border-inline-end: 2vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: grey;
+  border-radius: 100vw;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 100vw;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .App {
   text-align: center;
+  box-shadow: 5px 10px 8px 10px grey;
   background-size: cover;
   opacity: 0;
   width: 100vw;
@@ -14,10 +51,40 @@
           animation: text 2s ease-in-out 0.3s forwards;
 }
 .App header {
+  width: 100vw;
+  height: 9vh;
+  background-color: grey;
+  box-shadow: 5px 10px 8px 10px grey;
+  border: 1px solid grey;
+}
+.App header .book {
+  position: absolute;
+  font-size: 50px;
+  left: 5vw;
+  top: 2vh;
+  color: rgb(224, 222, 220);
+}
+.App header .head {
+  position: absolute;
+  right: 3vw;
+  margin-top: 3vh;
+}
+.App header .head a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 2vw;
+  padding-bottom: 1.2vh;
+  font-size: 17px;
+  color: rgb(168, 158, 158);
+}
+.App header .head :hover {
+  border-bottom: 2px solid rgb(177, 168, 168);
+}
+.App section {
   -webkit-animation: showup 4s forwards;
           animation: showup 4s forwards;
 }
-.App header h1 {
+.App section h1 {
   font-style: italic;
   width: 40vw;
   opacity: 0;
@@ -29,18 +96,20 @@
   -webkit-animation: reveal 4s forwards;
           animation: reveal 4s forwards;
 }
-.App header h1 span {
+.App section h1 span {
   -webkit-animation: slidein 4s forwards;
           animation: slidein 4s forwards;
 }
 .App main {
   margin-top: 5vh;
 }
-.App main p {
+.App main .navigate {
   margin-top: 1.5vh;
   font-size: larger;
+  margin-bottom: 1.2vh;
+  text-decoration: none;
 }
-.App main p .span {
+.App main .navigate .span {
   padding: 1vh 2vw;
   border: none;
   font-size: medium;
@@ -53,10 +122,10 @@
   -webkit-animation: light 0.8s ease-in 4.2s forwards;
           animation: light 0.8s ease-in 4.2s forwards;
 }
-.App main p :hover {
+.App main .navigate :hover {
   opacity: 0.8;
 }
-.App main p .signup {
+.App main .navigate .signup {
   color: rgb(221, 205, 205);
   cursor: pointer;
   opacity: 0;
@@ -64,15 +133,197 @@
   -webkit-animation: light 0.8s ease-in 4.6s forwards;
           animation: light 0.8s ease-in 4.6s forwards;
 }
-.App main p :hover {
+.App main .navigate :hover {
   border-bottom: 1px solid white;
 }
 .App main .pin {
   opacity: 0;
+  font-size: large;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  color: rgb(172, 165, 165);
   -webkit-animation: light 0.8s ease-in 4.4s forwards;
           animation: light 0.8s ease-in 4.4s forwards;
 }
 
+#gallery {
+  width: 100vw;
+  padding-top: 5vh;
+  background: linear-gradient(190deg, grey 20%, rgb(215, 204, 219) 40%, rgb(219, 212, 206) 70%, white);
+  min-height: 63vh;
+  text-align: center;
+  box-shadow: 5px 10px 8px 10px rgb(224, 217, 217);
+}
+#gallery h3 {
+  display: inline-block;
+  font-style: italic;
+  padding-bottom: 1vh;
+  border-radius: 3px;
+  border-bottom: 3px solid white;
+  margin-bottom: 5vh;
+}
+#gallery main {
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#gallery main img {
+  width: 30vw;
+  height: 25vh;
+  border-radius: 2vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 2vh;
+}
+
+#about {
+  min-height: 40vh;
+  background: linear-gradient(-190deg, white 20%, rgb(215, 204, 219) 40%, rgb(219, 212, 206) 70%, grey);
+  text-align: center;
+  padding: 3vh 5vw;
+}
+#about h3 {
+  display: inline-block;
+  font-style: italic;
+  padding-bottom: 1vh;
+  border-radius: 3px;
+  border-bottom: 3px solid white;
+  margin-bottom: 5vh;
+}
+#about p {
+  font-size: larger;
+  line-height: 4vh;
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
+}
+
+footer {
+  text-align: center;
+  padding: 3vh 2vw;
+  min-height: 20vh;
+  background: linear-gradient(-190deg, rgb(215, 204, 219) 20%, rgb(215, 204, 219) 40%, rgb(219, 212, 206) 70%, white);
+}
+footer .linking {
+  font-size: larger;
+  display: block;
+  font-weight: 600;
+  padding-bottom: 2vh;
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid rgb(155, 152, 152);
+}
+footer .linking .arrow {
+  font-size: 30px;
+  position: relative;
+  top: 1vh;
+}
+footer .linking:hover {
+  opacity: 0.6;
+}
+footer .feet {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 2.5vh;
+  width: 22vw;
+  justify-content: space-between;
+  margin-left: 38vw;
+}
+footer .feet a {
+  width: 45px;
+  color: black;
+  padding-top: 5px;
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 50%;
+  transform: color 0.8s ease;
+}
+footer .feet a:hover {
+  color: blue;
+  border: 2px solid blue;
+}
+footer .feet .red:hover {
+  color: rgba(255, 0, 0, 0.616);
+  border: 2px solid rgba(255, 0, 0, 0.616);
+}
+
+.visible {
+  -webkit-animation: see 1.5s ease-in forwards;
+          animation: see 1.5s ease-in forwards;
+}
+
+.next {
+  -webkit-animation: about 1.5s ease-in forwards;
+          animation: about 1.5s ease-in forwards;
+}
+
+.lastlist {
+  -webkit-animation: design 1.5s ease-in forwards;
+          animation: design 1.5s ease-in forwards;
+}
+
+@-webkit-keyframes design {
+  from {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes design {
+  from {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes see {
+  0% {
+    transform: translatex(60vw);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes see {
+  0% {
+    transform: translatex(60vw);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes about {
+  0% {
+    transform: translatex(-60vw);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes about {
+  0% {
+    transform: translatex(-60vw);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
 @-webkit-keyframes light {
   from {
     opacity: 0;
@@ -83,7 +334,6 @@
     transform: translateY(0vh);
   }
 }
-
 @keyframes light {
   from {
     opacity: 0;

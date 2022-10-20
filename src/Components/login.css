@@ -1,0 +1,144 @@
+* {
+  padding: 0 0;
+  margin: 0 0;
+  box-sizing: border-box;
+}
+
+.state {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(140deg, rgb(207, 202, 76) 20%, rgb(143, 142, 124) 40%, rgb(219, 212, 206) 70%, white);
+  overflow: hidden;
+  padding: 8vh 25vw;
+}
+.state h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.state form {
+  display: flex;
+  margin-top: 4vh;
+  width: 45vw;
+  position: relative;
+  flex-direction: column;
+}
+.state form .spanner {
+  margin-left: 3vw;
+}
+.state form .input {
+  outline: none;
+  margin-top: 1.5vh;
+  margin-bottom: 1.4vh;
+  padding-left: 1vw;
+  border: none;
+  box-shadow: 2px 3px 3px 2px grey;
+  border-radius: 2vw;
+  height: 6vh;
+}
+.state form label {
+  font-size: large;
+  font-weight: 500;
+}
+.state form .checkbox {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.state form .checkbox #check {
+  margin-left: 1.4vw;
+  margin-right: 1.5vw;
+  width: 2vh;
+  background-color: pink;
+  height: 3vh;
+}
+.state form .forget {
+  float: right;
+  margin-right: 1vw;
+  position: absolute;
+  bottom: -5vh;
+  right: 3vw;
+}
+.state form #submit {
+  width: 30vw;
+  border: none;
+  height: 5vh;
+  margin-left: 7vw;
+  border-radius: 1.5vw;
+  box-shadow: 2px 3px 3px 2px grey;
+  cursor: pointer;
+}
+.state form :hover {
+  opacity: 0.6;
+}
+.state form .submit {
+  margin-top: 5vh;
+}
+.state .option {
+  margin-top: 9.5vh;
+  position: relative;
+}
+.state .option hr {
+  width: 45vw;
+  border: 1px solid black;
+}
+.state .option span {
+  padding: 10px;
+  position: absolute;
+  top: -2.4vh;
+  left: 20vw;
+  box-shadow: 2px 3px rgb(78, 76, 76);
+  border-radius: 0.5vw;
+  background-color: white;
+  z-index: 1;
+}
+.state footer {
+  margin-top: 7vh;
+}
+.state footer .design {
+  width: 45vh;
+  margin-left: 15vw;
+}
+.state footer .design a {
+  text-decoration: none;
+  padding: 10px 10px;
+  border: 2px solid rgb(161, 150, 150);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 1vw;
+  color: yellow;
+}
+.state footer .design a .icon {
+  font-size: 40px;
+}
+.state footer .design :hover {
+  opacity: 0.7;
+}
+.state footer .design .red {
+  padding: 15px 5px;
+}
+.state footer .design .red .icon {
+  padding-top: 2.5vh;
+  color: red;
+}
+.state footer .design .blue {
+  padding: 15px 5px;
+}
+.state footer .design .blue .icon {
+  padding-top: 2.5vh;
+  color: blue;
+}
+.state .last {
+  margin-left: 15vw;
+  margin-top: 7vh;
+}
+.state .last span {
+  font-size: large;
+  font-weight: 500;
+  margin-right: 0.5vw;
+}
+.state .last .rate {
+  color: grey;
+  text-decoration: none;
+  font-size: large;
+  padding-bottom: 1vh;
+  border-bottom: 2px solid black;
+}/*# sourceMappingURL=login.css.map */

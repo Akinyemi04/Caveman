@@ -1,21 +1,18 @@
 import './App.css';
-
+import Home from './Components/Home';
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import Signup from './Components/Signup';
 function App() {
   return (
-    <div className="App">
-      <header>
-        <h1>
-            Get familiar with your journal it is the <span>best idea
-            in this field</span>
-        </h1>
-      </header>
-      
-      <main>
-        <p><span className='span'>Log-in</span></p>
-        <p className='pin'>Don't have an account yet?</p>
-        <p ><span className='signup'>Sign-up</span></p>
-      </main>
+    <BrowserRouter>
+    <div className="Epp"> 
     </div>
+    <Routes>
+      <Route exact path='/' element={<Home/>}></Route>
+      <Route path='/signup' element={<Signup/>}/>
+      <Route path='/login' element={<Signup state='login'/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
