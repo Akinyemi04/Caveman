@@ -20,23 +20,25 @@
   margin-top: 4vh;
   width: 45vw;
   position: relative;
+  padding-left: 3vw;
   flex-direction: column;
 }
 .state form .spanner {
-  margin-left: 3vw;
+  margin-bottom: 1.5vh;
 }
 .state form .input {
   outline: none;
   margin-top: 1.5vh;
   margin-bottom: 1.4vh;
   padding-left: 1vw;
+  width: 37vw;
   border: none;
   box-shadow: 2px 3px 3px 2px grey;
   border-radius: 2vw;
   height: 6vh;
 }
 .state form label {
-  font-size: large;
+  font-size: medium;
   font-weight: 500;
 }
 .state form .checkbox {
@@ -61,7 +63,7 @@
   width: 30vw;
   border: none;
   height: 5vh;
-  margin-left: 7vw;
+  margin-left: 3.5vw;
   border-radius: 1.5vw;
   box-shadow: 2px 3px 3px 2px grey;
   cursor: pointer;

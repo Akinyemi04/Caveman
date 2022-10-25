@@ -63,7 +63,7 @@ const Home = () => {
             </div>
         </AnimationOnScroll>
         <AnimationOnScroll animateIn='lastlist'>
-            <footer id='contactus'>
+            <footer className='footer' id='contactus'>
                 <a className='linking' href="#top">
                     Back To Top <ExpandLessIcon className='arrow'/>
                 </a>

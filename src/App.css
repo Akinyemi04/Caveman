@@ -199,13 +199,13 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-footer {
+.footer {
   text-align: center;
   padding: 3vh 2vw;
   min-height: 20vh;
   background: linear-gradient(-190deg, rgb(215, 204, 219) 20%, rgb(215, 204, 219) 40%, rgb(219, 212, 206) 70%, white);
 }
-footer .linking {
+.footer .linking {
   font-size: larger;
   display: block;
   font-weight: 600;
@@ -214,15 +214,15 @@ footer .linking {
   text-decoration: none;
   border-bottom: 2px solid rgb(155, 152, 152);
 }
-footer .linking .arrow {
+.footer .linking .arrow {
   font-size: 30px;
   position: relative;
   top: 1vh;
 }
-footer .linking:hover {
+.footer .linking:hover {
   opacity: 0.6;
 }
-footer .feet {
+.footer .feet {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 2.5vh;
@@ -230,7 +230,7 @@ footer .feet {
   justify-content: space-between;
   margin-left: 38vw;
 }
-footer .feet a {
+.footer .feet a {
   width: 45px;
   color: black;
   padding-top: 5px;
@@ -239,11 +239,11 @@ footer .feet a {
   border-radius: 50%;
   transform: color 0.8s ease;
 }
-footer .feet a:hover {
+.footer .feet a:hover {
   color: blue;
   border: 2px solid blue;
 }
-footer .feet .red:hover {
+.footer .feet .red:hover {
   color: rgba(255, 0, 0, 0.616);
   border: 2px solid rgba(255, 0, 0, 0.616);
 }

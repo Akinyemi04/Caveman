@@ -1,0 +1,155 @@
+.log {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+.log .img {
+  width: 44vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+}
+.log .blank {
+  background: linear-gradient(140deg, rgb(138, 148, 150) 20%, rgb(78, 85, 87) 40%, rgb(152, 142, 156) 70%, white);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 56vw;
+  height: 100vh;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+}
+.log main {
+  z-index: 1;
+  width: 92vw;
+  height: 94vh;
+  background-color: white;
+  display: flex;
+  position: absolute;
+  top: 3vh;
+  left: 4vw;
+  border-radius: 1vw;
+  box-shadow: 5px 5px 14px grey;
+}
+.log main .small_screen {
+  width: 35vw;
+  height: 94vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.log main form {
+  padding: 17vh 3vw;
+  display: flex;
+  width: 57vw;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+}
+.log main form .span {
+  position: absolute;
+  top: 5vh;
+  right: 35vw;
+}
+.log main form .span h1 {
+  position: relative;
+  display: inline-block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.log main form .span h1:after {
+  position: absolute;
+  border-top: 0.15em solid rgb(170, 167, 167);
+  border-radius: 1rem;
+  content: "";
+  right: 60%;
+  left: 0;
+  bottom: -0.34em;
+}
+.log main form div {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  margin-left: 3vw;
+  margin-bottom: 4vh;
+}
+.log main form div label {
+  font-size: medium;
+  font-weight: 450;
+  margin-left: 1.12vw;
+  margin-bottom: 0.6vh;
+  height: 4vh;
+}
+.log main form div input, .log main form div select {
+  min-width: 14vw;
+  height: 5vh;
+  outline: none;
+  margin-left: 1vw;
+  margin-right: 2vw;
+  border: 1px solid rgb(221, 215, 215);
+  padding: 1.1vh 0.5vw;
+  border-radius: 0.41vw;
+}
+.log main form div .spanner {
+  margin-top: 1.1vh;
+  font-size: small;
+  font-weight: 500;
+}
+.log main form #submit {
+  position: absolute;
+  bottom: 13vh;
+  left: 12.5vw;
+  border: none;
+  border-radius: 1vw;
+  box-shadow: 3px 2px 6px grey;
+  background: linear-gradient(140deg, rgb(138, 148, 150) 20%, rgb(78, 85, 87) 40%, rgb(152, 142, 156) 70%, white);
+  width: 25vw;
+  padding: 2.1vh;
+  color: white;
+  font-size: medium;
+  font-weight: 500;
+  cursor: pointer;
+}
+.log main form #submit:hover {
+  opacity: 0.7;
+}
+.log main form footer {
+  position: absolute;
+  bottom: 3vh;
+  left: 10vw;
+}
+.log main form footer .link {
+  margin-bottom: 0.5vh;
+  color: grey;
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+}
+.log main form footer .link:hover {
+  opacity: 0.75;
+}
+.log main .login {
+  display: block;
+}
+.log main .login span {
+  right: 40vw;
+}
+.log main .login .input {
+  width: 34vw;
+  height: 8vh;
+  font-size: large;
+  font-weight: 200;
+}
+.log main .login p {
+  padding-left: 4.6vw;
+}
+.log main .login p input {
+  width: 3vw;
+  height: 3vh;
+}
+.log main .login #submit {
+  bottom: 26vh;
+}
+.log main .login footer {
+  bottom: 20vh;
+}/*# sourceMappingURL=logx.css.map */
