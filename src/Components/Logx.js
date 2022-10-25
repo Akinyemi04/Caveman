@@ -71,7 +71,7 @@ const Logx = (props) => {
                     </div>
                     <p><input type='checkbox'/>Remember me?</p>
                     <input id='submit' type="submit" />
-                <footer>Already have an Account?<NavLink className='link' to='/login'> Log-in</NavLink></footer>
+                <footer>Need an account?<NavLink className='link' to='/signup'> Sign-up</NavLink></footer>
                 </form>
             }
         </main>
