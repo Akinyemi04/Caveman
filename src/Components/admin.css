@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.parent {
+  background-color: rgb(240, 237, 242);
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20vh;
+}
+.parent main {
+  width: 60vw;
+  height: 60vh;
+  background-color: white;
+  display: flex;
+  margin-left: 20vw;
+}
+.parent main form {
+  width: 30vw;
+  padding-top: 5vh;
+  padding-left: 3vw;
+}
+.parent main form h1 {
+  font-weight: 600;
+  margin-bottom: 2vh;
+}
+.parent main form p {
+  font-size: medium;
+  font-weight: 400;
+  margin-bottom: 2vh;
+}
+.parent main form section {
+  margin-top: 3vh;
+  display: flex;
+  border: 1px solid rgb(219, 212, 212);
+  margin-bottom: 2vh;
+  width: 20vw;
+}
+.parent main form section span {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(240, 237, 242);
+  padding-top: 10px;
+  padding-left: 7px;
+}
+.parent main form section span .icon {
+  color: black;
+}
+.parent main form section .input {
+  width: 18vw;
+  outline: none;
+  border: none;
+  margin-left: 1.4vw;
+}
+.parent main form .submit {
+  width: 9vw;
+  height: 5vh;
+  background-color: rgb(46, 42, 42);
+  color: white;
+  margin-top: 2vh;
+  margin-right: 7vw;
+  border: 1px solid rgb(240, 237, 242);
+  border-radius: 0.6vw;
+  float: right;
+  cursor: pointer;
+}
+.parent img {
+  width: 30vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=admin.css.map */

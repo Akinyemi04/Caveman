@@ -1,0 +1,74 @@
+*{
+    padding:  0 0;
+    margin: 0 0;
+    box-sizing: border-box;
+}
+
+.registra{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/gallery2.jpg');
+    position: relative;
+    background-size: cover;
+    form{
+        position: absolute;
+        top: 25vh;
+        display: flex;
+        flex-direction: column;
+        left: 30vw;
+        width: 40vw;
+        height: 50vh;
+        background-color: rgb(177, 167, 167);
+        padding: 2vh 3vw;
+        border-radius: 0.5vw;
+        h1{
+            font-size: x-large;
+            margin-bottom: 1.5vh;
+            font-weight: 500;
+        }
+        label{
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 400;
+            margin-bottom: 1vh;
+            //display: block;
+        }
+        input{
+            margin-bottom: 1vh;
+            height: 5vh;
+            outline: none;
+            border-radius: 1vw;
+            padding-left: 1vw;
+            border: 1px solid rgb(168, 165, 165);
+        }
+        #submit{
+            margin-top: 2vh;
+            width: 25vw;
+            margin-left: 5vw;
+            cursor: pointer;
+            color: white;
+            background-color: rgb(112, 98, 98);
+        }
+        p{
+            button{
+                float: right;
+                margin-top: 2vh;
+                border: none;
+                background-color: inherit;
+                cursor: pointer;
+            }
+            .king{
+                margin-top: 6vh;
+                input{
+                    background-color: grey;
+                    margin-top: 1vh;
+                    width:2.5vw;
+                    height: 3vh;
+                }
+            }
+        }
+        #submit:hover{
+            opacity: 0.67;
+        }
+    }
+}
