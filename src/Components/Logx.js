@@ -57,7 +57,7 @@ const Logx = (props) => {
                 </div>
             
                 <input id='submit' type="submit" />
-                <footer>Already have an Account?<NavLink className='link' to='/signup'> Sign-in</NavLink></footer>
+                <footer>Already have an Account?<NavLink className='link' to='/login'> Sign-in</NavLink></footer>
                 </form>:
                 <form className='login'>
                     <span className='span'><h1>Sign up</h1></span>
