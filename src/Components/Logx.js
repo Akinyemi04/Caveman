@@ -67,7 +67,7 @@ const Logx = (props) => {
                     </div>
                     <div>
                         <label htmlFor="password">Password</label>
-                        <input className='input' type="text" name='password' id='password' />
+                        <input className='input' type="password" name='password' id='password' />
                     </div>
                     <p><input type='checkbox'/>Remember me?</p>
                     <input id='submit' type="submit" />
